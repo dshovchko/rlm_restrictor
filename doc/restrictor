@@ -1,0 +1,33 @@
+restrictor {
+    #
+    # ANY RESTRICTION OR BAN TO INTERRUPT IN A STOPPPING ATTEMPT 
+    # AUTHORIZATION AT THE TIME auth_rate SECONDS
+    #
+    #################################################################
+    #
+    # limit authorization requests, 1 for the specified number of seconds
+    # (60 - default)
+    #
+    auth_rate = 60
+    #
+    # the number of pre-time limit on the authorization
+    # duration auth_rate before it will impose the ban
+    # (5 - default)
+    #
+    ban_level = 5
+    #
+    # ban duration in seconds
+    # (3600 - default)
+    #
+    ban_duration = 3600
+    #
+    # log file name
+    # ("${logdir}/rlm_restrictor.log" - default)
+    #
+    log = ${logdir}/rlm_restrictor.log
+    #
+    # disable logging
+    # (no - default)
+    #
+    disable_log = no
+}
